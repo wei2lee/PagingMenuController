@@ -186,6 +186,10 @@ open class MenuItemView: UIView {
         addSubview(dividerImageView)
     }
     
+    public func removeDivider() {
+        dividerImageView?.removeFromSuperview()
+    }
+    
     fileprivate func layoutMultiLineLabel() {
         // H:|[titleLabel(==labelSize.width)]|
         // H:|[descriptionLabel(==labelSize.width)]|
